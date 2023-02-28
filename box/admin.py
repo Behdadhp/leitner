@@ -8,7 +8,6 @@ class LeitnerBoxAdmin(admin.ModelAdmin):
 
     list_display = ("word", "translate", "pronounce", "counter", "example")
     list_display_links = ("word", "translate", "pronounce", "counter", "example")
-    ordering = ("_counter",)
 
 
 admin.site.register(models.LeitnerBox, LeitnerBoxAdmin)
